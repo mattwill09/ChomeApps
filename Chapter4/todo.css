@@ -8,7 +8,7 @@ ul {
 
 button, input[type=submit] {
     background-color: #0074cc;
-    background-image: linear-gradient(top, #08c, #05c);
+    background-image: -webkit-linear-gradient(top, #08c, #05c);
     border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
     text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
     color: white;
@@ -17,4 +17,20 @@ button, input[type=submit] {
 .done-true {
     text-decoration: line-through;
     color: grey;
+}
+
+@-webkit-keyframes switch-green {
+    from {background-color: white;} to {background-color: rgb(163,255,163);}
+}
+
+@-webkit-keyframes switch-red {
+    from {background-color: white;} to {background-color: rgb(255,203,203);}
+}
+
+.dragging {
+    -webkit-animation: switch-green 0.5s ease-in-out 0 infinite alternate;
+}
+
+.invalid-dragging {
+    -webkit-animation: switch-red 0.5s ease-in-out 0 infinite alternate;
 }
