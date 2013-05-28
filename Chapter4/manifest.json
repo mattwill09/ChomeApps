@@ -1,11 +1,14 @@
 {
     "manifest_version": 2,
     "name": "My storage app",
-    "version": "1.1",
+    "version": "1.2",
     "app": {
         "background": {
             "scripts": ["main.js"]
         }
     },
-    "permissions": ["storage"]
+    "permissions": [
+    {"fileSystem": ["write"]},
+    "storage", "unlimitedStorage"
+  ]
 }

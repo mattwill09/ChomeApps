@@ -1,0 +1,34 @@
+{
+  "name": "Google Drive Filer",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "minimum_chrome_version": "23",
+  "oauth2": {
+    "client_id": "596030042872-nqtslpr2cq823s0rhod6uscuftci1imr.apps.googleusercontent.com",
+    "scopes": [
+      "https://docs.google.com/feeds/",
+      "https://docs.googleusercontent.com/",
+      "https://spreadsheets.google.com/feeds/",
+      "https://www.googleapis.com/auth/drive"
+    ]
+  },
+  "icons": {
+    "16": "img/google_drive_logo.jpg",
+    "128": "img/google_drive_logo.jpg"
+  },
+  "app": {
+    "background": {
+      "scripts": ["js/background.js"]
+    }
+  },
+  "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCoiCFpbbe9EuNQgyeKAd386yb7JK2Yx2UPZ/h6uDdmIb5pVvNcf4euTT/WwXTv/eeL4kbn4LvfFrjCHs5/L2zIYErm5qy9y4Lo359id6EahoDd6FKBKKXu7H9VOS0tiMEZ8jnjH44UEbpDlaU82PRs4Bp2bmbWB8TkLoMwdvzQPQIDAQAB",
+  "permissions": [
+    "experimental",
+    "identity",
+    "https://docs.google.com/feeds/",
+    "https://docs.googleusercontent.com/",
+    "https://spreadsheets.google.com/feeds/",
+    "https://ssl.gstatic.com/",
+    "https://www.googleapis.com/"
+  ]
+}
